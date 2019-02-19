@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Instagram by Ro",
+  "name": "Instagram Clone App by Rosilio Roman",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "instagram-favicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
