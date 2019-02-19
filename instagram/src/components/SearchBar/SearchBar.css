@@ -27,7 +27,7 @@
 }
 
 .logos-container {
-    width: 65%;
+    width: 52%;
     height: 35px;
     display: flex;
     align-items: center;
@@ -39,7 +39,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 5%;
+    padding-right: 6%;
     border-right: 1px solid black;
 }
 
@@ -49,7 +49,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 5%;
+    padding-left: 6%;
 }
 
 .camera-img {
@@ -64,7 +64,7 @@
 /* Search Field Styles */
 .search-field {
     width: 65%;
-    height: 30px;
+    height: 28px;
     border: 1px solid #C9C9C9;
     border-radius: 3px;
     background-color: #FAFAFA;
@@ -86,7 +86,7 @@
 }
 
 .icons-img {
-    width: 48%;
+    width: 42%;
 }
 
 .icons-img:hover {
