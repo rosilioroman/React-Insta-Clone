@@ -26,3 +26,9 @@
 .comment-text {
     margin-left: 1%;
 }
+
+.timestamp {
+    font-size: 1.2rem;
+    color: grey;
+    margin: 2% 0;
+}

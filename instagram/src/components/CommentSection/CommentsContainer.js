@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 import './CommentSection.css';
 
 import Comment from './Comment';
+import TimeStamp from './TimeStamp';
 
 const CommentsContainer = props => {
     return (
         <>
             {props.comments.map((c, index) => <Comment key={index} comment={c}/>)}
+            <TimeStamp timestamp={props.timestamp}/>
         </>
     );
 }
