@@ -5,7 +5,7 @@
 }
 
 .main-nav {
-    max-width: 950px;
+    max-width: 975px;
     margin: 0 auto;
     height: 75px;
     display: flex;
@@ -63,7 +63,7 @@
 
 /* Search Field Styles */
 .search-field {
-    width: 60%;
+    width: 65%;
     height: 30px;
     border: 1px solid #C9C9C9;
     border-radius: 3px;
