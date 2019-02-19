@@ -10,7 +10,9 @@ class CommentSection extends Component {
         super(props);
         this.state = {
             comments: [],
-            newComment: ""
+            newComment: "",
+            isLiked: false,
+            currentLikes: this.props.likes
         }
     }
 
@@ -22,6 +24,7 @@ class CommentSection extends Component {
         this.setState({ [e.target.name]: e.target.value });
     }
 
+    //onSubmit event handler
     addComment = e => {
         e.preventDefault();
 
@@ -39,10 +42,32 @@ class CommentSection extends Component {
         })
     }
 
+    //onClick event handler for controlling likes
+    likePost = () => {
+        let newLikes = this.state.currentLikes;
+        if(this.state.isLiked) {
+            newLikes--;
+            this.setState({
+                isLiked: false,
+                currentLikes: newLikes
+            })
+        } else {
+            newLikes++;
+            this.setState({ 
+                isLiked: true,
+                currentLikes: newLikes
+            })
+        }
+    }
+
     render() {
         return (
             <div className="comment-section">
-                <LikesContainer likes={this.props.likes}/>
+                <LikesContainer
+                    likes={this.state.currentLikes}
+                    likePost={this.likePost}
+                    isLiked={this.state.isLiked}
+                />
                 <CommentsContainer 
                     comments={this.state.comments} 
                     timestamp={this.props.timestamp}
