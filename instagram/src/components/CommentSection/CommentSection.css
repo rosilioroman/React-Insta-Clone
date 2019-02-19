@@ -1,0 +1,28 @@
+.comment-section {
+    width: 100%;
+    padding: 2%;
+}
+
+.heart-container {
+    width: 30px;
+}
+
+.heart-container:hover {
+    cursor: pointer;
+}
+
+.likes-num {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 1%;
+}
+
+.comment {
+    font-size: 1.4rem;
+    display: flex;
+    margin-bottom: 1%;
+}
+
+.comment-text {
+    margin-left: 1%;
+}

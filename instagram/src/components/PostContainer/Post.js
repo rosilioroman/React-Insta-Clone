@@ -9,7 +9,11 @@ const Post = props => {
     return (
         <div className="post-card">
             <PostContent content={props.post}/>
-            <CommentSection comments={props.post.comments}/>
+            <CommentSection 
+                comments={props.post.comments}
+                likes={props.post.likes}
+                timestamp={props.post.timestamp}
+            />
         </div>
     );
 }
