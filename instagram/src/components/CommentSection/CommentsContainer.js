@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './CommentSection.css';
 
 import Comment from './Comment';
+import CommentInputForm from './CommentInputForm';
 import TimeStamp from './TimeStamp';
 
 const CommentsContainer = props => {
@@ -10,6 +11,7 @@ const CommentsContainer = props => {
         <>
             {props.comments.map((c, index) => <Comment key={index} comment={c}/>)}
             <TimeStamp timestamp={props.timestamp}/>
+            <CommentInputForm />
         </>
     );
 }
