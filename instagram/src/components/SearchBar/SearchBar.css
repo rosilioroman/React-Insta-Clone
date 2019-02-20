@@ -1,0 +1,94 @@
+.app-header {
+    width: 100%;
+    background-color: #FFF;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.main-nav {
+    max-width: 975px;
+    margin: 0 auto;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-section {
+    width: 33.3333%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Instagram Logos Styles */
+.logos-section {
+    justify-content: flex-start;
+}
+
+.logos-container {
+    width: 65%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.camera-logo {
+    width: 25%;
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5%;
+    border-right: 1px solid black;
+}
+
+.name-logo {
+    width: 75%;
+    height: 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.camera-img {
+    width: 90%;
+}
+
+.insta-img {
+    width: 90%;
+    padding-top: 5%;
+}
+
+/* Search Field Styles */
+.search-field {
+    width: 65%;
+    height: 30px;
+    border: 1px solid #C9C9C9;
+    border-radius: 3px;
+    background-color: #FAFAFA;
+    color: #262626;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.search-field:focus {
+    display: flex;
+    text-align: left;
+    padding-left: 5px;
+    background-color: #FFF;
+}
+
+/* User Icons Styles */
+.icons-section {
+    justify-content: flex-end;
+}
+
+.icons-img {
+    width: 48%;
+}
+
+.icons-img:hover {
+    cursor: pointer;
+}
