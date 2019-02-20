@@ -4,6 +4,7 @@ import './App.css';
 import dummyData from './dummy-data'; //import data contained in dummy-data.js
 
 import authenticate from './components/authentication/authenticate';
+import Login from './components/Login/Login';
 import PostPage from './components/PostContainer/PostPage';
 
 class App extends Component {
@@ -68,4 +69,4 @@ class App extends Component {
   }
 }
 
-export default authenticate(App);
+export default authenticate(App)(Login);
