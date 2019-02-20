@@ -20,11 +20,12 @@ class CommentSection extends Component {
         this.setState({ comments: this.props.comments })
     }
 
+    //generic onChange event handler
     handleChanges = e => {
         this.setState({ [e.target.name]: e.target.value });
     }
 
-    //onSubmit event handler
+    //onSubmit event handler for adding a new comment
     addComment = e => {
         e.preventDefault();
 
