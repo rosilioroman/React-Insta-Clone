@@ -3,6 +3,7 @@ import Fuse from 'fuse.js';
 import './App.css';
 import dummyData from './dummy-data'; //import data contained in dummy-data.js
 
+import authenticate from './components/authentication/authenticate';
 import PostPage from './components/PostContainer/PostPage';
 
 class App extends Component {
@@ -67,4 +68,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default authenticate(App);
