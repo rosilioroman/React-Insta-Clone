@@ -3,11 +3,10 @@ import Fuse from 'fuse.js';
 import './App.css';
 import dummyData from './dummy-data'; //import data contained in dummy-data.js
 
-import SearchBar from './components/SearchBar/SearchBar';
-import PostContainer from './components/PostContainer/PostContainer';
+import PostPage from './components/PostContainer/PostPage';
 
 class App extends Component {
-  
+
   state = {
     posts: [],
     searchText: ""
@@ -58,11 +57,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <SearchBar 
+        <PostPage 
           value={this.state.searchText}
           handleChanges={this.handleChanges}
+          posts={this.state.posts}
         />
-        <PostContainer posts={this.state.posts}/>
       </div>
     );
   }
