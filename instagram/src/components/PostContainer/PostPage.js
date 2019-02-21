@@ -9,6 +9,7 @@ const PostPage = props => {
             <SearchBar 
                 value={props.value}
                 handleChanges={props.handleChanges}
+                handleLogout={props.handleLogout}
             />
             <PostContainer posts={props.posts}/>
         </>

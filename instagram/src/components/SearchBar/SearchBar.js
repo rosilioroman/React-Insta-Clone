@@ -12,7 +12,7 @@ const SearchBar = props => {
             <nav className="main-nav">
                 <InstaLogos />
                 <SearchField value={props.value} handleChanges={props.handleChanges}/>
-                <UserIcons />
+                <UserIcons handleLogout={props.handleLogout}/>
             </nav>
         </header>
     );

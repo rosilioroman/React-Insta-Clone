@@ -56,6 +56,12 @@ class App extends Component {
     }
   }
 
+  handleLogout = () => {
+    localStorage.clear();
+    alert('Logged Out!');
+    window.location.reload();
+  }
+
   render() {
     return (
       <div className="App">
@@ -63,6 +69,7 @@ class App extends Component {
           value={this.state.searchText}
           handleChanges={this.handleChanges}
           posts={this.state.posts}
+          handleLogout={this.handleLogout}
         />
       </div>
     );
