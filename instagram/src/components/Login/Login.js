@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Login.css';
 
+import AppsImg from '../../images/apps.png';
 import InstagramLogo from '../../images/instagram-name-logo.jpg';
 
 class Login extends Component {
@@ -37,22 +38,32 @@ class Login extends Component {
                         alt="Instagram name logo" 
                         className="insta-logo"
                     />
-                    <input 
-                        type="text" 
-                        placeholder="username"
-                        name="username"
-                        value={this.state.username}
-                        onChange={this.handleChanges}
-                        className="login-input"
-                    />
-                    <input 
-                        type="password" 
-                        placeholder="password"
-                        name="password"
-                        className="login-input"
-                    />
+                    <div className="input-container">
+                        <input 
+                            type="text" 
+                            placeholder="username"
+                            name="username"
+                            value={this.state.username}
+                            onChange={this.handleChanges}
+                            className="login-input"
+                        />
+                        <input 
+                            type="password" 
+                            placeholder="password"
+                            name="password"
+                            className="login-input"
+                        />
+                    </div>
                     <button type="submit" className="login-button">Log In</button>
                 </form>
+                <div className="appstore-container">
+                    <p>Get the app.</p>
+                    <div>
+                        <a href="https://www.instagram.com">
+                            <img src={AppsImg} alt="Google Play and App Store icons"/>
+                        </a>
+                    </div>
+                </div>
             </div>
         );
     }
