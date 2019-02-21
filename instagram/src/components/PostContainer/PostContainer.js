@@ -3,11 +3,15 @@ import './PostContainer.css';
 import PropTypes from 'prop-types';
 
 import Post from './Post';
+import UserSection from '../UserSection/UserSection';
 
 const PostContainer = props => {
     return (
-        <div className="post-container">
-            {props.posts.map(p => <Post key={p.imageUrl} post={p}/>)}
+        <div className="content-container">
+            <div className="post-container">
+                {props.posts.map(p => <Post key={p.imageUrl} post={p}/>)}
+            </div>
+            <UserSection />
         </div>
     );
 }

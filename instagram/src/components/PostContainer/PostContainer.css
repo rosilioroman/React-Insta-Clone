@@ -1,11 +1,16 @@
-.post-container {
-    max-width: 950px;
+.content-container {
+    display: flex;
+    max-width: 975px;
     margin: 0 auto;
+}
+
+.post-container {
+    width: 65%;
     margin-bottom: 60px;
 }
 
 .post-card {
-    width: 65%;
+    width: 100%;
     margin-top: 60px;
     border: 1px solid #E6E6E6;
     border-radius: 3px;
