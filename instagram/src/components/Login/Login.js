@@ -3,6 +3,7 @@ import './Login.css';
 
 import AppsImg from '../../images/apps.png';
 import InstagramLogo from '../../images/instagram-name-logo.jpg';
+import PhonesImg from '../../images/phones.jpg';
 
 class Login extends Component {
     state = {
@@ -32,36 +33,45 @@ class Login extends Component {
     render() {
         return(
             <div className="login-view">
-                <form onSubmit={this.handleLogin} className="login-form">
+                <div>
                     <img 
-                        src={InstagramLogo} 
-                        alt="Instagram name logo" 
-                        className="insta-logo"
+                        className="phones-img"
+                        src={PhonesImg}
+                        alt="Mobile phones example"
                     />
-                    <div className="input-container">
-                        <input 
-                            type="text" 
-                            placeholder="username"
-                            name="username"
-                            value={this.state.username}
-                            onChange={this.handleChanges}
-                            className="login-input"
+                </div>
+                <div className="login-content">
+                    <form onSubmit={this.handleLogin} className="login-form">
+                        <img 
+                            src={InstagramLogo} 
+                            alt="Instagram name logo" 
+                            className="insta-logo"
                         />
-                        <input 
-                            type="password" 
-                            placeholder="password"
-                            name="password"
-                            className="login-input"
-                        />
-                    </div>
-                    <button type="submit" className="login-button">Log In</button>
-                </form>
-                <div className="appstore-container">
-                    <p>Get the app.</p>
-                    <div>
-                        <a href="https://www.instagram.com">
-                            <img src={AppsImg} alt="Google Play and App Store icons"/>
-                        </a>
+                        <div className="input-container">
+                            <input 
+                                type="text" 
+                                placeholder="username"
+                                name="username"
+                                value={this.state.username}
+                                onChange={this.handleChanges}
+                                className="login-input"
+                            />
+                            <input 
+                                type="password" 
+                                placeholder="password"
+                                name="password"
+                                className="login-input"
+                            />
+                        </div>
+                        <button type="submit" className="login-button">Log In</button>
+                    </form>
+                    <div className="appstore-container">
+                        <p>Get the app.</p>
+                        <div>
+                            <a href="https://www.instagram.com">
+                                <img src={AppsImg} alt="Google Play and App Store icons"/>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
