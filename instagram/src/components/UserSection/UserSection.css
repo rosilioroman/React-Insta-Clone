@@ -1,0 +1,48 @@
+.user-section {
+    width: 30%;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.user-header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.user-content {
+    width: 100%;
+    height: 250px;
+    margin: 4% 0;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 3px;
+}
+
+.user-content h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #9C9C9C;
+}
+
+.user-content h5 {
+    font-size: 1.3rem;
+}
+
+.user-footer {
+    font-size: 1.3rem;
+    color: #9C9C9C;
+}
+
+.footer-links {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.footer-links li {
+    margin-right: 5px;
+}
