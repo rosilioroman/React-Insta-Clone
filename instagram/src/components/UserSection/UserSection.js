@@ -1,13 +1,17 @@
 import React from 'react';
 import './UserSection.css';
 
+import UserHeader from './UserHeader';
+import UserContent from './UserContent';
+import UserFooter from './UserFooter';
+
 const UserSection = props => {
     return (
         <aside className="user-section">
-            <div>User</div>
-            <div>Stories</div>
-            <div>Suggestions For You</div>
-            <div>Side Footer</div>
+            <UserHeader />
+            <UserContent title="Stories" action="Watch All"/>
+            <UserContent title="Suggestions For You" action="See All"/>
+            <UserFooter />
         </aside>
     );
 }
