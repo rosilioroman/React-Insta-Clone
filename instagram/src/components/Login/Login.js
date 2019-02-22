@@ -21,7 +21,7 @@ class Login extends Component {
         e.preventDefault();
 
         //check that the user input a username
-        if(!this.state.username) alert('Username field cannot be empty'); 
+        if(!this.state.username) return alert('Username field cannot be empty'); 
 
         //save the username in all lowercase in localStorage
         localStorage.setItem('username', this.state.username.toLowerCase());
@@ -37,7 +37,7 @@ class Login extends Component {
                     <img 
                         className="phones-img"
                         src={PhonesImg}
-                        alt="Mobile phones example"
+                        alt="Example of Instagram on mobile phones"
                     />
                 </div>
                 <div className="login-content">

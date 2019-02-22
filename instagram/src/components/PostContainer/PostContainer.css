@@ -1,12 +1,11 @@
 .content-container {
     display: flex;
     max-width: 975px;
-    margin: 0 auto;
+    margin: 80px auto;
 }
 
 .post-container {
     width: 65%;
-    margin-bottom: 60px;
 }
 
 .post-card {

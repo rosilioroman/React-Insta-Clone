@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Fuse from 'fuse.js';
-import './App.css';
 import dummyData from './dummy-data'; //import data contained in dummy-data.js
 
 import authenticate from './components/authentication/authenticate';

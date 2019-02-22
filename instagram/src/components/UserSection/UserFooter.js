@@ -6,10 +6,17 @@ const UserFooter = props => {
             <div>
                 <ul className="footer-links">
                     <li>
-                        <a href="https://github.com/rosilioroman/React-Insta-Clone">GitHub</a>
+                        <a href="https://github.com/rosilioroman/React-Insta-Clone">
+                            GitHub
+                        </a>
                     </li>
                     <li>
-                        <a href="https://rosilioroman.me">Portfolio</a>
+                        •
+                    </li>
+                    <li>
+                        <a href="https://rosilioroman.me">
+                            Portfolio
+                        </a>
                     </li>
                 </ul>
             </div>

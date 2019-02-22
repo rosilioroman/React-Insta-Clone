@@ -20,7 +20,8 @@ const SearchBar = props => {
 
 SearchBar.propTypes = {
     value: PropTypes.string.isRequired,
-    handleChanges: PropTypes.func.isRequired
+    handleChanges: PropTypes.func.isRequired,
+    handleLogout: PropTypes.func.isRequired
 }
 
 export default SearchBar;
