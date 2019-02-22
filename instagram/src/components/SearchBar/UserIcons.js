@@ -4,7 +4,7 @@ import icons from '../../images/user-icons.png';
 
 const UserIcons = props => {
     return (
-        <div className="nav-section icons-section">
+        <div className="nav-section icons-section" onClick={props.handleLogout}>
             <img
                 src={ icons }
                 alt="User icons"

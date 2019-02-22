@@ -3,16 +3,15 @@ import Fuse from 'fuse.js';
 import './App.css';
 import dummyData from './dummy-data'; //import data contained in dummy-data.js
 
-import SearchBar from './components/SearchBar/SearchBar';
-import PostContainer from './components/PostContainer/PostContainer';
+import authenticate from './components/authentication/authenticate';
+import Login from './components/Login/Login';
+import PostPage from './components/PostContainer/PostPage';
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      posts: [],
-      searchText: ""
-    }
+
+  state = {
+    posts: [],
+    searchText: ""
   }
 
   componentDidMount() {
@@ -57,17 +56,24 @@ class App extends Component {
     }
   }
 
+  handleLogout = () => {
+    localStorage.clear();
+    alert('Logged Out!');
+    window.location.reload();
+  }
+
   render() {
     return (
       <div className="App">
-        <SearchBar 
+        <PostPage 
           value={this.state.searchText}
           handleChanges={this.handleChanges}
+          posts={this.state.posts}
+          handleLogout={this.handleLogout}
         />
-        <PostContainer posts={this.state.posts}/>
       </div>
     );
   }
 }
 
-export default App;
+export default authenticate(App)(Login);

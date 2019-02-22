@@ -1,5 +1,30 @@
 const dummyData = [
   {
+    username: "wanderlust",
+    thumbnailUrl:
+      "https://tk-assets.lambdaschool.com/c432f179-8bd7-4758-959d-d88a21f96bca_37105899_432228420518610_5035444036064772096_n.jpg",
+
+    imageUrl:
+      "https://images.unsplash.com/photo-1498278854500-7c206daa073b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+    likes: 5247,
+    timestamp: "May 20th 2018, 4:42:40 pm",
+    comments: [
+      {
+        username: "wanderlust",
+        text:
+          '“ Take only memories, leave only footprints.” – Chief Seattle'
+      },
+      {
+        username: "outdoorsman",
+        text: "That is seriously beautiful"
+      },
+      {
+        username: "janeappleseed",
+        text: "Where is this place? Take me with you next time!"
+      }
+    ]
+  },
+  {
     username: "philzcoffee",
     thumbnailUrl:
       "https://tk-assets.lambdaschool.com/ecd33d34-c124-4b75-92d2-e5c52c171ed8_11201517_887808411287357_1307163552_a.jpg",

@@ -30,7 +30,7 @@ class CommentSection extends Component {
         e.preventDefault();
 
         const newCommentObj = {
-            username: 'TestUser',
+            username: localStorage.getItem('username'),
             text: this.state.newComment
         }
 
